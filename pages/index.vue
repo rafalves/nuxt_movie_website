@@ -55,5 +55,7 @@ const url = computed(() => {
 });
 
 const { data } = await useFetch<APIResponse>(url);
+console.log(JSON.stringify(data?.value));
+
 
 </script>

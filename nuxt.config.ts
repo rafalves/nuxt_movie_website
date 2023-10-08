@@ -2,13 +2,14 @@
 export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
+    "@nuxt/devtools"
   ],
   runtimeConfig: {
-    apiAccessToken: '',
+    apiAccessToken: "",
     public: {
-      apiBaseUrl: '',
-      imgBaseUrl:'',
-    }
-  }
+      apiBaseUrl: "https://api.themoviedb.org/3",
+      imgBaseUrl: "https://image.tmdb.org/t/p/w500",
+    },
+  },
 });
